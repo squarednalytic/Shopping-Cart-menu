@@ -1,0 +1,10 @@
+CREATE DATABASE IF NOT EXISTS shopping_cart;
+
+USE shopping_cart;
+
+CREATE TABLE IF NOT EXISTS cart_items (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(255) NOT NULL,
+  price DECIMAL(10, 2) NOT NULL,
+  quantity INT NOT NULL DEFAULT 1
+);
